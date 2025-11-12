@@ -154,7 +154,7 @@ print(frase_com_hifen)  # Saída: 'Olá,-mundo!'
 frase_com_asterisco = '*'.join(lista_palavras)  # Concatena as palavras com asterisco
 print(frase_com_asterisco)  # Saída: 'Olá,*mundo!'
 
-#criando lista atravé do range
+#criando lista através do range
 lista_numeros = list(range(1, 11))  # Cria uma lista com números de 1 a 10
 print(lista_numeros)  # Saída: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 

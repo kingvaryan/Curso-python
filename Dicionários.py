@@ -178,7 +178,7 @@ print(outro)
 print(type(outro))
 # O método fromkeys cria as chaves com o valor definido, se não for definido, o valor padrão será None
 #ELe vai gerar um dicionário com as chaves informadas, todas com o valor None. Ele irá atribui a esta chave o valor informado
-novo = {}.fromkeys(['nome', 'idade', 'altura'])
+novo = {}.fromkeys(['nome':"guilherme maia", 'idade', 'altura'])
 print(novo)
 
 
