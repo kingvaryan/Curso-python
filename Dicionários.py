@@ -128,6 +128,61 @@ print(receita)
 #Forma 2o - Retorna o valor removido
 del receita['mai']
 print(receita)
+#Forma 3 - Retorna o valor removido
+ret = receita.popitem() #Remove o último item adicionado
+print(ret)
+print(receita)
+#OBS: Caso tentemos remover uma chave que não existe, teremos o erro KeyError
+#ret = receita.pop('jul') #KeyError
+#del receita['jul'] #KeyError
+
+#Exemplo de itens
+produto1 = {'nome': 'Playstation 4', 'valor': 2300.00, 'qtde': 20}
+produto2 = {'nome': 'Xbox S', 'valor': 4500.00, 'qtde': 10}
+print(produto1)
+print(produto2)
+
+
+#métodos de dicionários
+#Limpar dicionário (Zerar dados)
+d = dict(a=1, b=2, c=3)
+print(d)
+d.clear()
+print(d)
+
+#Copiar dicionário
+d = dict(a=1, b=2, c=3)
+print(d)
+novo = d.copy()
+print(novo)
+novo['d'] = 4
+print(d)
+print(novo)
+
+#Forma 2 - Mais comum
+novo = d.fromkeys('a', 'b')
+print(novo)
+novo = d.fromkeys(['nome', 'idade', 'altura'], 'desconhecido')
+print(novo)
+
+#Forma 2 - Shallow Copy
+novo = d
+novo['a'] = 4
+print(d)
+print(novo)
+
+
+# Forma nao usual de criação de dicionários
+outro = {}.fromkeys(['nome', 'idade', 'altura'], 'desconhecido')
+print(outro)
+print(type(outro))
+# O método fromkeys cria as chaves com o valor definido, se não for definido, o valor padrão será None
+#ELe vai gerar um dicionário com as chaves informadas, todas com o valor None. Ele irá atribui a esta chave o valor informado
+novo = {}.fromkeys(['nome', 'idade', 'altura'])
+print(novo)
+
+
+
 
 """
 Conclusão 1: A forma mais comum de adicionar ou atualizar dados em um dicionário é utilizando a chave entre colchetes []
