@@ -86,3 +86,4 @@ b) A quantidade de números ímpares.
 c) A média dos números contidos na tupla.
 """
 
+#Resolução exercício 1
