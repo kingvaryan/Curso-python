@@ -20,3 +20,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Teste.py
+# Este arquivo contém o código principal para ler três números inteiros do usuário,
+# determinar se são pares ou ímpares, e exibir os resultados.
